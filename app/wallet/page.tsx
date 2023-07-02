@@ -1,3 +1,7 @@
 export default function Wallet() {
-  return <div>Wallet</div>
+  return (
+    <main>
+      <div>Wallet</div>
+    </main>
+  )
 }
