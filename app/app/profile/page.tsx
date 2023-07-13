@@ -1,6 +1,4 @@
 import { getSession } from '@auth0/nextjs-auth0'
-import ServerComponent from '@/app/server-component'
-import ClientComponent from '@/app/client-component'
 
 export default async function Profile() {
   const session = await getSession()
@@ -14,10 +12,6 @@ export default async function Profile() {
       </pre>
       <h3>User</h3>
       <pre>{JSON.stringify(session?.user, null, 2)}</pre>
-      <h2>Server Component:</h2>
-      <ServerComponent />
-      <h2>Client Component:</h2>
-      <ClientComponent />
     </main>
   )
 }
