@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a demo project of [Stripe](https://stripe.com/) usage, based on [Next.js](https://nextjs.org/) and [Auth0](https://auth0.com/).
 
 ## Getting Started
 
