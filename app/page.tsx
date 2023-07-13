@@ -1,6 +1,9 @@
 'use client'
 
+import Link from 'next/link'
 import { useUser } from '@auth0/nextjs-auth0/client'
+
+import { buttonVariants } from '@/components/ui/button'
 
 export default function Home() {
   const { user, error, isLoading } = useUser()
@@ -14,10 +17,21 @@ export default function Home() {
       <div className="m-auto max-w-screen-xl">
         {user ? (
           <>
-            Welcome {user.name}! <a href="/api/auth/logout">Logout</a>
+            Welcome {user.name}!{' '}
+            <Link
+              className={buttonVariants({ variant: 'outline' })}
+              href="/api/auth/logout"
+            >
+              Logout
+            </Link>
           </>
         ) : (
-          <a href="/api/auth/login">Login</a>
+          <Link
+            className={buttonVariants({ variant: 'outline' })}
+            href="/api/auth/login"
+          >
+            Login
+          </Link>
         )}
       </div>
     </main>
