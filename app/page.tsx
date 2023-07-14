@@ -8,12 +8,12 @@ import { buttonVariants } from '@/components/ui/button'
 export default function Home() {
   const { user, error, isLoading } = useUser()
 
-  if (isLoading) return <div>Loading...</div>
-  if (error) return <div>{error.message}</div>
+  if (isLoading) return <div className="text-center mt-8">Loading...</div>
+  if (error) return <div className="text-center mt-8">{error.message}</div>
 
   return (
     <main>
-      <h1 className="text-3xl text-center mt-8">Stripe demo</h1>
+      <h1 className="text-3xl text-center mt-8">Mall based on Stripe</h1>
       <div className="m-auto max-w-screen-xl">
         {user ? (
           <>

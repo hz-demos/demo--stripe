@@ -6,8 +6,8 @@ import { UserProvider } from '@auth0/nextjs-auth0/client'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Stripe Payments Demo',
-  description: 'A demo of Stripe Payments in Next.js with Auth0',
+  title: 'Mall System based on Stripe',
+  description: 'A mall system based on Stripe, built with Next.js, Auth0, Shadcn/ui.',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
