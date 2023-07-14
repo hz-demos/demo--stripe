@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useStripe, useElements, PaymentElement } from '@stripe/react-stripe-js'
+import { useStripe, useElements, PaymentElement, CardElement } from '@stripe/react-stripe-js'
 
 import { Button } from '@/components/ui/button'
 import { url } from '@/lib/utils'
@@ -25,7 +25,7 @@ const SetupForm = () => {
       //`Elements` instance that was used to create the Payment Element
       elements,
       confirmParams: {
-        return_url: url('/app/profile'),
+        return_url: url('/app/payments/set-up-future-payments/setup-complete'),
       },
     })
 
