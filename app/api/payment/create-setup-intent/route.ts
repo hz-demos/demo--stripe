@@ -24,7 +24,7 @@ export async function POST(request: Request) {
   const user = await auth0.getUser(clientUser.sub)
   console.log(user, customer)
 
-  const setupIntent = await stripe.stripe.setupIntents.create({
+  const setupIntent = await stripe.instance.setupIntents.create({
     customer: customer.id,
     payment_method_types: ['card'],
   })

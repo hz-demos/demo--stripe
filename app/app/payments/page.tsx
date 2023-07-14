@@ -22,7 +22,7 @@ const scenarios = {
     text: 'Build a two-step confirmation experience',
     completed: false,
   },
-  'collect-payment': {
+  'collect-payment-before-create-intent': {
     text: 'Collect payment details before creating an Intent',
     completed: false,
   },
